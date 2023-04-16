@@ -2,7 +2,6 @@ let header = document.querySelector('header');
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
-
 window.addEventListener('scroll', () => {
     header.classList.toggle('shadow', window.scrollY > 0);
 });
@@ -25,3 +24,10 @@ darkmode.onclick = () => {
         document.body.classList.remove('active');
     }
 }
+
+const form = document.querySelector('form');
+const sendButton = document.querySelector('.contact-button');
+
+sendButton.addEventListener('click', function() {
+    form.reset();
+});
