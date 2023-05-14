@@ -284,6 +284,7 @@ span {
 }
 
 .project-img {
+  width: 280px;
   overflow: hidden;
   border-radius: 0.5rem;
   background-color: rgba(94, 104, 121, 0.288);
