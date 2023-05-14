@@ -33,10 +33,9 @@ sendButton.addEventListener("click", function () {
 });
 
 // code for image carousel
-
 var responsiveSlider = function (sliderId, sliderWrapId, prevId, nextId) {
   var slider = document.getElementById(sliderId);
-  var sliderWidth = slider.offsetWidth;
+  var sliderWidth = slider.offsetWidth + 2;
   var slideList = document.getElementById(sliderWrapId);
   var count = 1;
   var items = slideList.querySelectorAll("li").length;
@@ -44,7 +43,7 @@ var responsiveSlider = function (sliderId, sliderWrapId, prevId, nextId) {
   var next = document.getElementById(nextId);
 
   window.addEventListener("resize", function () {
-    sliderWidth = slider.offsetWidth;
+    sliderWidth = slider.offsetWidth + 2;
   });
 
   var prevSlide = function () {
@@ -63,6 +62,7 @@ var responsiveSlider = function (sliderId, sliderWrapId, prevId, nextId) {
     if (e) {
       e.preventDefault();
     }
+
     if (count < items) {
       slideList.style.left = "-" + count * sliderWidth + "px";
       count++;
@@ -82,7 +82,7 @@ var responsiveSlider = function (sliderId, sliderWrapId, prevId, nextId) {
 
   setInterval(function () {
     nextSlide();
-  }, 5000);
+  }, 4000);
 };
 
 const slidersList = [
