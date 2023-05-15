@@ -1,5 +1,6 @@
 :root {
   --slider-width: 1199px;
+  --slider-width-1185: 898px;
   --slider-width-1080: 820px;
   --slider-width-991: 752px;
   --slider-width-881: 769px;
@@ -29,6 +30,15 @@
   height: 100%;
   width: var(--slider-width);
   float: left;
+}
+
+@media (max-width: 1185px) {
+  .slider {
+    width: var(--slider-width-1185);
+  }
+  .slider ul li {
+    width: var(--slider-width-1185);
+  }
 }
 
 @media (max-width: 1090px) {
