@@ -1,6 +1,6 @@
 :root {
   --slider-width: 1199px;
-  --slider-width-1185: 898px;
+  --slider-width-1200: 898px;
   --slider-width-1080: 820px;
   --slider-width-991: 752px;
   --slider-width-881: 769px;
@@ -32,12 +32,12 @@
   float: left;
 }
 
-@media (max-width: 1185px) {
+@media (max-width: 1200px) {
   .slider {
-    width: var(--slider-width-1185);
+    width: var(--slider-width-1200);
   }
   .slider ul li {
-    width: var(--slider-width-1185);
+    width: var(--slider-width-1200);
   }
 }
 
